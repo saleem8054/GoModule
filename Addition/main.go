@@ -1,5 +1,9 @@
 package Addition
 
-func Add(a,b int) int{
-	return a+b
+func Add(a... int) int{
+	sum := 0
+	for _,v := range a {
+		sum+=v
+	}
+	return sum
 }
